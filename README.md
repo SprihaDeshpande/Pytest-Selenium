@@ -1,6 +1,22 @@
 # Pytest-Selenium Automation 
 
-Intial installments
+### Intial installments
 
 1. Make sure to have Pytest Installed by running the command below
 `pip install –U pytest`
+2. Verify pytest is installed and check version with command below
+`pytest --version`
+3. Make sure to have Python3.5 or above and pip installed 
+Follow the link for Python3 insallations: https://installpython3.com/mac/
+Follow the link for PIP installations: https://pip.pypa.io/en/stable/installing/
+4. Verify pip installed 
+`python -m pip --version`
+5. Verify Python installed
+`python --version`
+
+
+### Webdriver installations
+1. Install chrome webdriver from the link below
+https://chromedriver.chromium.org/downloads
+2. Use this Unix executable in the EXACT LOCATION where you are to run the selenium test_selenium.py
+3. Change the location of your local webdriver executable in the script of test_selenium.py in test_setup()
