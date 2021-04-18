@@ -33,4 +33,11 @@ https://chromedriver.chromium.org/downloads
 `pytest test_selenium.py`
 <img width="1792" alt="Screen Shot 2021-04-18 at 2 04 38 AM" src="https://user-images.githubusercontent.com/50254090/115140100-704a1900-9fea-11eb-8787-0fa022509ba2.png">
 
+### Execution 
+
+https://user-images.githubusercontent.com/50254090/115142734-3253f180-9ff8-11eb-9149-93a4788c1539.mp4
+
+
+
+
 
