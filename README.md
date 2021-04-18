@@ -9,10 +9,15 @@
 3. Make sure to have Python3.5 or above and pip installed 
 Follow the link for Python3 insallations: https://installpython3.com/mac/
 Follow the link for PIP installations: https://pip.pypa.io/en/stable/installing/
-4. Verify pip installed 
-`python -m pip --version`
-5. Verify Python installed
-`python --version`
+4. Verify Python installed
+`python3 --version`
+<img width="431" alt="Screen Shot 2021-04-18 at 3 03 33 AM" src="https://user-images.githubusercontent.com/50254090/115141725-bb682a00-9ff2-11eb-8e36-974ee3d3f3cd.png">
+
+5. Verify pip installed 
+`pip3 --version`
+
+![image](https://user-images.githubusercontent.com/50254090/115141751-de92d980-9ff2-11eb-97b6-048c3e328d37.png)
+
 
 
 ### Webdriver installations
