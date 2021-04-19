@@ -10,7 +10,7 @@ And maximize the browser
 '''
 def test_setup():
     global chrome_driver
-    chrome_driver = webdriver.Chrome(executable_path=r'/Users/sprihad/Desktop/selenium/Pytest-Selenium/chromedriver')
+    chrome_driver = webdriver.Chrome(executable_path=r'/Users/sprihad/Downloads/chromedriver')
     chrome_driver.get('http://ec2-54-208-152-154.compute-1.amazonaws.com/')
     chrome_driver.maximize_window()
 
@@ -50,7 +50,6 @@ def test_game():
         sleep(1)
 
         weighing_outcome = chrome_driver.find_elements_by_xpath(Locator.locators["weighings"])[iterative_count].text
-        print(weighing_outcome)
         if "=" not in weighing_outcome:
             operator_flag = False
             break
@@ -58,7 +57,6 @@ def test_game():
 
     if operator_flag:
         uneven_element = available_coins_value.pop()
-        print(uneven_element)
     else:
         if "<" in weighing_outcome:
             uneven_element = re.match(r'.*(\d)].*<',weighing_outcome).group(1)
@@ -85,9 +83,9 @@ def test_reset():
 
     for i in available_coins_value:
         if int(i)%2 == 0:
-            assert chrome_driver.find_elements_by_xpath(Locator.locators["left_board"])[int(i)].text == ""
+            assert chrome_driver.find_elements_by_xpath(Locator.locators["left_board"])[int(i)].get_attribute("value") == ""
         else:
-            assert chrome_driver.find_elements_by_xpath(Locator.locators["right_board"])[int(i)].text == ""
+            assert chrome_driver.find_elements_by_xpath(Locator.locators["right_board"])[int(i)].get_attribute("value") == ""
 '''
 Close the window after testing is complete.
 '''
